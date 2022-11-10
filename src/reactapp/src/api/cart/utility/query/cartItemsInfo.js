@@ -1,14 +1,15 @@
 const cartItemsInfo = `
 items {
   id
-  product_type
   quantity
   prices {
-    row_total_incl_tax {
+    price {
       value
-    }
-    price_incl_tax {
+      currency
+    },
+    row_total {
       value
+      currency
     }
   }
   product {
